@@ -20,7 +20,7 @@ class Hud(sb: SpriteBatch) : Disposable {
     private val countdownLabel: Label
     private val textLabel1: Label
 
-    // timing
+    // liczenie czasu gry
     fun update(dt: Float) {
         timeCount += dt
         if (timeCount >= 1) {
@@ -43,27 +43,24 @@ class Hud(sb: SpriteBatch) : Disposable {
         }
 
     init {
-        //setup the HUD viewport using a new camera seperate from camera
-        //define the stage using that viewport and our games spritebatch
         viewport = FitViewport(400f, 200f, OrthographicCamera())
         stage = Stage(viewport, sb)
         val table = Table()
-        //Top-Align table
+        //wyrównanie table do góry
         table.top()
-        //make the table fill the entire stage
+        //dopasowanie aktora do rozmiaru sceny
         table.setFillParent(true)
-        //define labels
         countdownLabel = Label(java.lang.String.format("%06d", worldTimer), LabelStyle(BitmapFont(), Color.WHITE))
         textLabel1 = Label("Scores", LabelStyle(BitmapFont(), Color.WHITE))
         scoreLabel = Label(java.lang.String.format("%06d", score), LabelStyle(BitmapFont(), Color.WHITE))
-        //add our labels to the table
+        //dodanie etykiet do tabeli
         table.add(textLabel1).expandX().padTop(10f)
         table.defaults()
         table.add(countdownLabel).expandX()
-        //add a second row to the table
+        //ustawienie etykiety countdownLabel w rogu 
         table.row()
         table.add(scoreLabel).expandX()
-        //add the table to the stage
+        //dodanie tabeli do sceny
         stage.addActor(table)
     }
 }
