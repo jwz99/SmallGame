@@ -47,8 +47,6 @@ public class PlayScreen implements Screen
     private World world;
 
     private Small small;
-    //TODO: Rysownik barier kolizyjnych.
-    private Box2DDebugRenderer box2DDebugRenderer;
 
     //TODO: Postacie w grze.
 
@@ -82,8 +80,6 @@ public class PlayScreen implements Screen
         mapRenderer.setView(camera);
         //TODO: 4. Utworzenie świata fizyki 2D.
         world=new World(new Vector2(0,-65.87f),true);
-        //TODO: 5. Utworzenie rysownika do barier fizycznych 2D.
-        box2DDebugRenderer =new Box2DDebugRenderer();
         //TODO: 4. Nałożenie BOX2D na warstwę "ground" mapy.
         BodyDef bodyDef=new BodyDef();
         PolygonShape shape=new PolygonShape();
