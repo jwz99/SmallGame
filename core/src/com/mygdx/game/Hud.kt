@@ -50,7 +50,6 @@ class Hud(sb: SpriteBatch){
         scoreLabel = Label(java.lang.String.format("%06d", score), LabelStyle(BitmapFont(), Color.WHITE))
         //dodanie etykiet do tabeli
         table.add(textLabel1).expandX()
-        table.defaults()
         table.add(countdownLabel).expandX()
         //ustawienie etykiety countdownLabel w rogu 
         table.row()
