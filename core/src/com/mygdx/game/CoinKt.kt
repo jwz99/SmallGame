@@ -50,7 +50,7 @@ class Coin(
         world.destroyBody(body)
     }
 
-    fun Draw(batch: SpriteBatch?) {
+    fun Draw(batch: SpriteBatch) {
         //TODO: Rysowanie obiektu, jeżeli ma być narysowany.
         if (render) {
             sprite.rotation = sprite.rotation + rand.nextFloat()
