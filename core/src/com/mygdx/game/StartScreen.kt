@@ -20,10 +20,6 @@ import com.badlogic.gdx.utils.viewport.Viewport
 class StartScreen(private val game: Game) : Screen {
     private val viewport: Viewport
     private val stage: Stage
-
-    //TODO: Mapa.
-    private val mapRenderer: OrthogonalTiledMapRenderer? = null
-    var map: TiledMap = null
     override fun show() {}
     override fun render(delta: Float) {
         if (Gdx.input.justTouched()) {
