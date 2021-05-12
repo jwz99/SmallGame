@@ -23,7 +23,7 @@ class StartScreen(private val game: Game) : Screen {
 
     //TODO: Mapa.
     private val mapRenderer: OrthogonalTiledMapRenderer? = null
-    var map: TiledMap? = null
+    var map: TiledMap = null
     override fun show() {}
     override fun render(delta: Float) {
         if (Gdx.input.justTouched()) {
