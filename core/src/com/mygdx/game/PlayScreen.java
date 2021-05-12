@@ -61,7 +61,7 @@ public class PlayScreen implements Screen
     private ArrayList<Coin> coins;
     //TODO: c) wynik:
     public static int points;
-    //HUD
+    //TODO: hud
     private Hud hud;
     public PlayScreen(Small small)
     {
