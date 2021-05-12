@@ -285,6 +285,7 @@ public class PlayScreen implements Screen
         SetWorldTime();
         small.spriteBatch.setProjectionMatrix(hud.stage.getCamera().combined);
         hud.stage.draw();
+        hud.update(delta);
     }
 
     @Override
