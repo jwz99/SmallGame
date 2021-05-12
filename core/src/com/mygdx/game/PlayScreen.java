@@ -249,11 +249,6 @@ public class PlayScreen implements Screen
         small.spriteBatch.end();
     }
 
-    private void DrawBox2DRendererDebug(float dt)
-    {
-        //TODO: Rysowanie barier fizycznych obiektów.
-        box2DDebugRenderer.render(world,camera.combined);
-    }
 
     @Override
     public void render(float delta)
