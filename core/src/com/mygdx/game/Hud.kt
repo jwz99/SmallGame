@@ -12,13 +12,15 @@ import com.badlogic.gdx.utils.Disposable
 import com.badlogic.gdx.utils.viewport.FitViewport
 import com.badlogic.gdx.utils.viewport.Viewport
 
-class Hud(sb: SpriteBatch) : Disposable {
+class Hud(sb: SpriteBatch){
     lateinit var stage: Stage
     private val viewport: Viewport
     private var timeCount = 0f
     private var worldTimer = 0
     private val countdownLabel: Label
     private val textLabel1: Label
+    private var score = 0
+    private lateinit var scoreLabel: Label
 
     // liczenie czasu gry
     fun update(dt: Float) {
@@ -29,13 +31,6 @@ class Hud(sb: SpriteBatch) : Disposable {
             timeCount = 0f
         }
     }
-
-    override fun dispose() {
-        stage.dispose()
-    }
-
-        private var score = 0
-        private lateinit var scoreLabel: Label
 
         fun addScore(value: Int) {
             score += value
