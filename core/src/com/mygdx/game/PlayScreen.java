@@ -47,7 +47,6 @@ public class PlayScreen implements Screen
     private World world;
 
     private Small small;
-    private Small parent;
     //TODO: Rysownik barier kolizyjnych.
     private Box2DDebugRenderer box2DDebugRenderer;
 
