@@ -165,7 +165,6 @@ public class PlayScreen implements Screen
                         coin.Destroy();
                         points++;
                         System.out.println("Points: "+points);
-                        A.applyLinearImpulse(new Vector2(2,0),A.getWorldCenter(),true);
                         hud.addScore(points);
                     }
                     else if (oB.getClass() == Player.class && oA.getClass() == Coin.class)
@@ -174,7 +173,6 @@ public class PlayScreen implements Screen
                         coin.Destroy();
                         points++;
                         System.out.println("Points: "+points);
-                        B.applyLinearImpulse(new Vector2(2,0),A.getWorldCenter(),true);
                         hud.addScore(points);
                     }
                 }
