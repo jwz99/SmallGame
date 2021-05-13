@@ -101,6 +101,7 @@ public class PlayScreen implements Screen
         }
         //TODO: 5. Utworzenie gracza.
         player=new Player(world);
+        //TODO: 5. Utworzenie HUD.
         hud = new Hud(small.spriteBatch);
         //TODO: 6. Dodanie monet do gry.
         coins=new ArrayList<Coin>(100);
