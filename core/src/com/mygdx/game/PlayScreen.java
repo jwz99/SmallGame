@@ -268,7 +268,6 @@ public class PlayScreen implements Screen
         DrawSprites(delta);
 
         //TODO: 6. Rysowanie barier fizycznych obiektów.
-        //DrawBox2DRendererDebug(delta);
 
         //TODO: 7. Ustawianie paramterów świata.
         SetWorldTime();
